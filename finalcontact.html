@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Emmanuel Kilel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/emmanuel-avatar.png" alt="Emmanuel avatar" class="avatar">
+        <div>
+          <h1>Emmanuel Kilel</h1>
+          <p class="tag">Creative Web Developer & Data Enthusiast</p>
+        </div>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active btn-contact">Contact</a>
+      </nav>
+
+      <div class="header-controls">
+        <button id="darkToggle5" class="icon-btn" aria-label="Toggle dark mode">🌓</button>
+        <button id="menuToggle5" class="icon-btn mobile-only" aria-label="Toggle menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container contact-page">
+    <section class="contact-grid">
+      <div class="contact-card card">
+        <h2>Get in touch</h2>
+        <p>Email: <a href="mailto:emmanuelkilel44@gmail.com">emmanuelkilel44@gmail.com</a></p>
+        <p>Based in Kenya — available for remote work.</p>
+        <div class="card-actions">
+          <a href="mailto:emmanuelkilel44@gmail.com" class="btn">Email Me</a>
+        </div>
+      </div>
+
+      <form id="contactForm" class="card form-card" novalidate>
+        <h3>Contact Form (simulated)</h3>
+
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required placeholder="Your name">
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required placeholder="you@example.com">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+
+        <p id="formNotice" class="form-notice" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year5"></span> Emmanuel Kilel — Built with ❤️.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
